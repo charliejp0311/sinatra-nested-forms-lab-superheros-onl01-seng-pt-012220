@@ -11,7 +11,7 @@ class App < Sinatra::Base
     post '/teams' do
       @team = {:name => params['team']['name'], :motto => params['team']['motto']}
       @heros = params['team']['heros']
-      # binding.pry
+      binding.pry
       erb :team
     end
 
